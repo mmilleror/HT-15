@@ -1,0 +1,18 @@
+image: archlinux
+packages:
+  - cmake
+  - arm-none-eabi-gcc
+  - arm-none-eabi-newlib
+sources:
+  - https://git.sr.ht/~krystianch/pico-epaper
+tasks:
+  - sdk: |
+      git clone https://github.com/raspberrypi/pico-sdk.git
+  - setup: |
+      cd pico-epaper
+      mkdir build
+      cd build
+      cmake -DPICO_SDK_PATH=~/pico-sdk -DPICO_EPAPER_EXAMPLES_ENABLED=true ..
+  - build: |
+      cd pico-epaper/build
+      make

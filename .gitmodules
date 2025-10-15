@@ -1,0 +1,6 @@
+[submodule "firmware/HT-15_Test/Libraries/Libraries"]
+	path = firmware/HT-15_Test/Libraries/Libraries
+	url = https://github.com/krystiancha/pico-epaper
+[submodule "firmware/HT-15_Test/Libraries/pico-epaper"]
+	path = firmware/HT-15_Test/Libraries/pico-epaper
+	url = https://github.com/krystiancha/pico-epaper

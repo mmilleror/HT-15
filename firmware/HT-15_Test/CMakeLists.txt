@@ -28,14 +28,19 @@ set(PICO_BOARD pico2 CACHE STRING "Board type")
 # Pull in Raspberry Pi Pico SDK (must be before project)
 include(pico_sdk_import.cmake)
 
+
+
 project(HT-15_Test C CXX ASM)
 
 # Initialise the Raspberry Pi Pico SDK
 pico_sdk_init()
 
-# Add executable. Default name is the project name, version 0.1
+set(PICO_EPAPER_PATH "src/libraries/pico-epaper" CACHE PATH "Path to pico-epaper")
+include(src/libraries/pico-epaper/external/pico_epaper_import.cmake)
 
-add_executable(HT-15_Test HT-15_Test.cpp )
+
+# Add executable. Default name is the project name, version 0.1
+add_executable(HT-15_Test src/HT-15_Test.cpp )
 
 pico_set_program_name(HT-15_Test "HT-15_Test")
 pico_set_program_version(HT-15_Test "0.1")
@@ -46,7 +51,7 @@ pico_enable_stdio_usb(HT-15_Test 1)
 
 # Add the standard library to the build
 target_link_libraries(HT-15_Test
-        pico_stdlib pico_multicore hardware_adc)
+        pico_stdlib pico_multicore hardware_adc hardware_spi pico_epaper)
 
 # Add the standard include files to the build
 target_include_directories(HT-15_Test PRIVATE
