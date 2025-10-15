@@ -140,6 +140,8 @@ void core_0() {
 }
 
 void core_1() {
+
+    //init display
     struct epaper display = {
         .spi = spi1,
         .cs_pin = DISPLAY_CS,
