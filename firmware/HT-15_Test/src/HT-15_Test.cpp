@@ -107,13 +107,12 @@ void core_0() {
     bool a_button_has_been_pressed = false;
 
     uint8_t encoder_state = 0;
-    uint8_t last_encoder_state = 0;
 
     uint16_t counter = 0;
     printf("Starting main loop on core 0\n");
     while (true) {
         //toggle LED
-        if(!(counter%50)){
+        if(!(counter%500)){
             led_state = !led_state;
             gpio_put(LED_STATUS, led_state);
         }
@@ -123,57 +122,50 @@ void core_0() {
             printf("Battery Voltage: %.2fV\n", get_battery_voltage());
         }
 
-        //scan buttons
-        for (int j = 0; j < 4; j++) {
-            gpio_put(button_pwr_pin[j], 1);
-            sleep_us(1);
-            for (int i = 0; i < 6; i++) {
-                button_debounce_states[i][j][button_debounce_pointer] = gpio_get(button_sense_pin[i]);
-            }
-            gpio_put(button_pwr_pin[j], 0);
-            sleep_us(1);
-        }
-        button_debounce_pointer = !button_debounce_pointer;
-        //check for button presses with debounce, and only trigger the button action on rising edge
-        for (int i = 0; i < 6; i++) {
+        if (counter%10){
+            //scan buttons
             for (int j = 0; j < 4; j++) {
-                if(button_debounce_states[i][j][0] && button_debounce_states[i][j][1]){
-                    if(!button_pressed_last_loop[i][j]){
-                        printf("%s\n", button_names[i][j]);
+                gpio_put(button_pwr_pin[j], 1);
+                sleep_us(1);
+                for (int i = 0; i < 6; i++) {
+                    button_debounce_states[i][j][button_debounce_pointer] = gpio_get(button_sense_pin[i]);
+                }
+                gpio_put(button_pwr_pin[j], 0);
+                sleep_us(1);
+            }
+            button_debounce_pointer = !button_debounce_pointer;
+            //check for button presses with debounce, and only trigger the button action on rising edge
+            for (int i = 0; i < 6; i++) {
+                for (int j = 0; j < 4; j++) {
+                    if(button_debounce_states[i][j][0] && button_debounce_states[i][j][1]){
+                        if(!button_pressed_last_loop[i][j]){
+                            printf("%s\n", button_names[i][j]);
+                        }
+                        button_pressed_last_loop[i][j] = true;
+                    } else{
+                        button_pressed_last_loop[i][j] = false;
                     }
-                    button_pressed_last_loop[i][j] = true;
-                } else{
-                    button_pressed_last_loop[i][j] = false;
                 }
             }
         }
 
         //process encoder
-        //TODO debounce
-        encoder_state = get_encoder_state();
-        if (encoder_state != last_encoder_state) {
-            //determine direction
-            if ((last_encoder_state == 0 && encoder_state == 1) ||
-                (last_encoder_state == 1 && encoder_state == 3) ||
-                (last_encoder_state == 3 && encoder_state == 2) ||
-                (last_encoder_state == 2 && encoder_state == 0)) {
-                printf("Channel -\n");
-            } else if ((last_encoder_state == 0 && encoder_state == 2) ||
-                       (last_encoder_state == 2 && encoder_state == 3) ||
-                       (last_encoder_state == 3 && encoder_state == 1) ||
-                       (last_encoder_state == 1 && encoder_state == 0)) {
+        encoder_state=((encoder_state<<1) | gpio_get(BTN_ENC_A)) & 0b111;//store the last three states of the encoder A pin
+        if(encoder_state==0b100){
+            if(gpio_get(BTN_ENC_B)){
                 printf("Channel +\n");
+            } else{
+                printf("Channel -\n");
             }
+            encoder_state=0;
         }
-        last_encoder_state = encoder_state;
-
 
         //manage counter
         counter++;
-        if(counter>=1000){
+        if(counter>=10000){
             counter = 0;
         }
-        sleep_ms(10);
+        sleep_ms(1);
     }
 }
 
