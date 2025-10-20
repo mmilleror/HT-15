@@ -6,8 +6,6 @@
 #include "hardware/adc.h"
 #include "hardware/spi.h"
 
-#include "pico/epaper.h"
-
 #include "pindefs.c"
 
 //turn audio amp power on or off
@@ -33,6 +31,19 @@ float get_battery_voltage(){
     return (float)adc_read()*.003791; //conversion factor for voltage divider and ADC step size (127/27)*(3.3/4095)
 }
 
+void init_encoder(){
+    //init encoder pins
+    gpio_init(BTN_ENC_A);
+    gpio_set_dir(BTN_ENC_A, GPIO_IN);
+    gpio_init(BTN_ENC_B);
+    gpio_set_dir(BTN_ENC_B, GPIO_IN);
+}
+
+int8_t get_encoder_state(){
+    int8_t encoder_posistion = gpio_get(BTN_ENC_A) << 1 | gpio_get(BTN_ENC_B);
+    return encoder_posistion;
+}
+
 //initialize all necessary pins
 void init_all(){
     //Audioamp power pin
@@ -48,7 +59,12 @@ void init_all(){
     //init battery voltage reading
     init_battery_voltage();
 
+    //init encoder pins
+    init_encoder();
+
 }
+
+
 
 //what will run on core 0
 void core_0() {
@@ -90,6 +106,9 @@ void core_0() {
     bool button_debounce_pointer=0;
     bool a_button_has_been_pressed = false;
 
+    uint8_t encoder_state = 0;
+    uint8_t last_encoder_state = 0;
+
     uint16_t counter = 0;
     printf("Starting main loop on core 0\n");
     while (true) {
@@ -128,7 +147,26 @@ void core_0() {
                 }
             }
         }
-        //print new line if any button has been pressed, and reset flag
+
+        //process encoder
+        //TODO debounce
+        encoder_state = get_encoder_state();
+        if (encoder_state != last_encoder_state) {
+            //determine direction
+            if ((last_encoder_state == 0 && encoder_state == 1) ||
+                (last_encoder_state == 1 && encoder_state == 3) ||
+                (last_encoder_state == 3 && encoder_state == 2) ||
+                (last_encoder_state == 2 && encoder_state == 0)) {
+                printf("Channel -\n");
+            } else if ((last_encoder_state == 0 && encoder_state == 2) ||
+                       (last_encoder_state == 2 && encoder_state == 3) ||
+                       (last_encoder_state == 3 && encoder_state == 1) ||
+                       (last_encoder_state == 1 && encoder_state == 0)) {
+                printf("Channel +\n");
+            }
+        }
+        last_encoder_state = encoder_state;
+
 
         //manage counter
         counter++;
@@ -140,45 +178,10 @@ void core_0() {
 }
 
 void core_1() {
-
-    //init display
-    struct epaper display = {
-        .spi = spi1,
-        .cs_pin = DISPLAY_CS,
-        .rst_pin = DISPLAY_RESET,
-        .busy_pin = DISPLAY_BUSY,
-        .width = 200,
-        .height = 200,
-        .black_border = false,
-    };
-
-    const size_t buffer_size = display.height * display.width / 8;
-
-    uint8_t display_buffer[buffer_size];
-	uint8_t prev_display_buffer[buffer_size];
-
-	display.buffer = display_buffer;
-	display.previous_buffer = prev_display_buffer;
-
-	spi_init(spi0, 4000000);
-	gpio_set_function(2, GPIO_FUNC_SPI);
-	gpio_set_function(3, GPIO_FUNC_SPI);
-
-	gpio_init(display.cs_pin);
-	gpio_init(display.rst_pin);
-	gpio_init(display.busy_pin);
-
-	gpio_set_dir(display.cs_pin, GPIO_OUT);
-	gpio_set_dir(display.rst_pin, GPIO_OUT);
-	gpio_set_dir(display.busy_pin, GPIO_IN);
-
-	memset(display_buffer, 0xff, buffer_size);
-	memset(prev_display_buffer, 0xff, buffer_size);
-
-	/* Display contents of the buffer (clear display to white) */
-	epaper_update(&display);
-
-
+    printf("Core 1 launched\n");
+    while(true){
+        sleep_ms(1000);
+    }
 }
 
 int main(){

@@ -23,7 +23,7 @@ if (EXISTS ${picoVscode})
     include(${picoVscode})
 endif()
 # ====================================================================================
-set(PICO_BOARD pico2 CACHE STRING "Board type")
+set(PICO_BOARD weact_studio_rp2350b_core CACHE STRING "Board type")
 
 # Pull in Raspberry Pi Pico SDK (must be before project)
 include(pico_sdk_import.cmake)
@@ -35,8 +35,8 @@ project(HT-15_Test C CXX ASM)
 # Initialise the Raspberry Pi Pico SDK
 pico_sdk_init()
 
-set(PICO_EPAPER_PATH "src/libraries/pico-epaper" CACHE PATH "Path to pico-epaper")
-include(src/libraries/pico-epaper/external/pico_epaper_import.cmake)
+# set(PICO_EPAPER_PATH "src/libraries/pico-epaper" CACHE PATH "Path to pico-epaper")
+# include(src/libraries/pico-epaper/external/pico_epaper_import.cmake)
 
 
 # Add executable. Default name is the project name, version 0.1
@@ -51,7 +51,7 @@ pico_enable_stdio_usb(HT-15_Test 1)
 
 # Add the standard library to the build
 target_link_libraries(HT-15_Test
-        pico_stdlib pico_multicore hardware_adc hardware_spi pico_epaper)
+        pico_stdlib pico_multicore hardware_adc hardware_spi)
 
 # Add the standard include files to the build
 target_include_directories(HT-15_Test PRIVATE
