@@ -24,11 +24,19 @@ void init_battery_voltage(){
     adc_init();
     adc_gpio_init(V_BAT);
 }
+void init_volume_pot(){
+    adc_init();
+    adc_gpio_init(POT_VOLUME);
+}
 
 //returns battery voltage in volts
 float get_battery_voltage(){
     adc_select_input(V_BAT-40); //V_BAT is ADC7, ADC input is 0 indexed
     return (float)adc_read()*.003791; //conversion factor for voltage divider and ADC step size (127/27)*(3.3/4095)
+}
+uint8_t get_volume_pot(){
+    adc_select_input(POT_VOLUME-40); //POT_VOLUME is ADC5, ADC input is 0 indexed
+    return 99-((uint8_t)((float)adc_read()*0.02442));
 }
 
 void init_encoder(){
@@ -37,11 +45,6 @@ void init_encoder(){
     gpio_set_dir(BTN_ENC_A, GPIO_IN);
     gpio_init(BTN_ENC_B);
     gpio_set_dir(BTN_ENC_B, GPIO_IN);
-}
-
-int8_t get_encoder_state(){
-    int8_t encoder_posistion = gpio_get(BTN_ENC_A) << 1 | gpio_get(BTN_ENC_B);
-    return encoder_posistion;
 }
 
 //initialize all necessary pins
@@ -108,11 +111,14 @@ void core_0() {
 
     uint8_t encoder_state = 0;
 
+    uint8_t current_volume = 0;
+    uint8_t last_volume = 0;
+
     uint16_t counter = 0;
     printf("Starting main loop on core 0\n");
     while (true) {
         //toggle LED
-        if(!(counter%500)){
+        if(!(counter%500==0)){
             led_state = !led_state;
             gpio_put(LED_STATUS, led_state);
         }
@@ -122,7 +128,7 @@ void core_0() {
             printf("Battery Voltage: %.2fV\n", get_battery_voltage());
         }
 
-        if (counter%10){
+        if (counter%10==0){
             //scan buttons
             for (int j = 0; j < 4; j++) {
                 gpio_put(button_pwr_pin[j], 1);
@@ -159,6 +165,15 @@ void core_0() {
             }
             encoder_state=0;
         }
+
+        //read volume pot
+        if (counter%1000==0){
+            current_volume = get_volume_pot();
+            if(abs(current_volume-last_volume)>2){
+                last_volume = current_volume;
+                printf("Volume: %d\n", current_volume);
+            }
+        }       
 
         //manage counter
         counter++;
