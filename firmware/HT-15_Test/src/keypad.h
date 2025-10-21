@@ -6,17 +6,57 @@
 #define KEYPAD_H
 
 #include <stdint.h>
-#include <stdbool.h>
 
-// Initialize keypad GPIOs and ADC inputs used by keypad code.
-void keypad_init(void);
+class Keypad{
+    public:
+        // Initialize keypad GPIOs and ADC inputs used by keypad code.
+        static void keypad_init();
 
-// Run one iteration of keypad processing. This will scan the matrix, handle debouncing,
-// Call this periodically from the main loop.
-void keypad_poll(void);
+        // Run one iteration of keypad processing. This will scan the matrix, handle debouncing,
+        // Call this periodically from the main loop.
+        static void keypad_poll();
 
-// Optional helpers to read analog values used by keypad (battery and volume pot).
-// These mirror the functions previously in HT-15_Test.cpp and remain available
-// as C functions for reuse.
+        //returns array of buttons pressed since last poll. Maximum of 5 buttons can be returned. Buttons pressed after this buffer fills up will be ignored.
+        static void get_buttons_pressed(Keys* out_buttons);
 
+    private:
+        static uint8_t button_sense_pin[6];
+        static uint8_t button_pwr_pin[4];
+        static Keys button_locations[6][4];
+        static char button_names[6][4][6];
+
+        static bool button_debounce_states[6][4][2];
+        static bool button_pressed_last_loop[6][4];
+        static bool button_debounce_pointer;
+
+        static Keys buttons_pressed_since_last_poll[5];
+        static uint8_t buttons_pressed_count;
+
+};
+
+typedef enum Keys{
+    KEY_NULL,
+    KEY_UP,
+    KEY_DOWN,
+    KEY_LEFT,
+    KEY_RIGHT,
+    KEY_LOCK,
+    KEY_SIDE1,
+    KEY_SIDE2,
+    KEY_PTT,
+    KEY_BACK,
+    KEY_ENTER,
+    KEY_1,
+    KEY_2,
+    KEY_3,
+    KEY_4,
+    KEY_5,
+    KEY_6,
+    KEY_7,
+    KEY_8,
+    KEY_9,
+    KEY_0,
+    KEY_STAR,
+    KEY_HASH
+};
 #endif // KEYPAD_H

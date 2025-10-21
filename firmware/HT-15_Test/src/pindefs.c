@@ -1,3 +1,5 @@
+#ifndef PINDEFS_C
+#define PINDEFS_C
 enum Pindefs{
     BTN_MTX_A=0,
     BTN_MTX_B=1,
@@ -48,3 +50,4 @@ enum Pindefs{
     CHGR_CONN=46,
     V_BAT=47
 };
+#endif  // PINDEFS_C
