@@ -7,6 +7,7 @@
 #include "hardware/spi.h"
 
 #include "pindefs.c"
+#include "keypad.h"
 
 //turn audio amp power on or off
 void set_audioamp_power(bool state){
@@ -118,7 +119,7 @@ void core_0() {
     printf("Starting main loop on core 0\n");
     while (true) {
         //toggle LED
-        if(!(counter%500==0)){
+        if(!(counter%500)){
             led_state = !led_state;
             gpio_put(LED_STATUS, led_state);
         }
@@ -128,7 +129,7 @@ void core_0() {
             printf("Battery Voltage: %.2fV\n", get_battery_voltage());
         }
 
-        if (counter%10==0){
+        if (!(counter%10)){
             //scan buttons
             for (int j = 0; j < 4; j++) {
                 gpio_put(button_pwr_pin[j], 1);
@@ -167,7 +168,7 @@ void core_0() {
         }
 
         //read volume pot
-        if (counter%1000==0){
+        if (!(counter%1000)){
             current_volume = get_volume_pot();
             if(abs(current_volume-last_volume)>2){
                 last_volume = current_volume;
