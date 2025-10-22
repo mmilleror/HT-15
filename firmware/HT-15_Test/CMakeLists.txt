@@ -40,7 +40,7 @@ pico_sdk_init()
 
 
 # Add executable. Default name is the project name, version 0.1
-add_executable(HT-15_Test src/HT-15_Test.cpp )
+add_executable(HT-15_Test src/HT-15_Test.cpp src/keypad.cpp)
 
 pico_set_program_name(HT-15_Test "HT-15_Test")
 pico_set_program_version(HT-15_Test "0.1")

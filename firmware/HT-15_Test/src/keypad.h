@@ -5,36 +5,16 @@
 #ifndef KEYPAD_H
 #define KEYPAD_H
 
+#include <stdio.h>
 #include <stdint.h>
+#include <math.h>
+#include <vector>
 
-class Keypad{
-    public:
-        // Initialize keypad GPIOs and ADC inputs used by keypad code.
-        static void keypad_init();
+#include "pico/stdlib.h"
 
-        // Run one iteration of keypad processing. This will scan the matrix, handle debouncing,
-        // Call this periodically from the main loop.
-        static void keypad_poll();
+#include "pindefs.cpp"
 
-        //returns array of buttons pressed since last poll. Maximum of 5 buttons can be returned. Buttons pressed after this buffer fills up will be ignored.
-        static void get_buttons_pressed(Keys* out_buttons);
-
-    private:
-        static uint8_t button_sense_pin[6];
-        static uint8_t button_pwr_pin[4];
-        static Keys button_locations[6][4];
-        static char button_names[6][4][6];
-
-        static bool button_debounce_states[6][4][2];
-        static bool button_pressed_last_loop[6][4];
-        static bool button_debounce_pointer;
-
-        static Keys buttons_pressed_since_last_poll[5];
-        static uint8_t buttons_pressed_count;
-
-};
-
-typedef enum Keys{
+enum Keys{
     KEY_NULL,
     KEY_UP,
     KEY_DOWN,
@@ -59,4 +39,31 @@ typedef enum Keys{
     KEY_STAR,
     KEY_HASH
 };
+
+class Keypad{
+    public:
+        // Initialize keypad GPIOs and ADC inputs used by keypad code.
+        static void keypad_init();
+
+        // Run one iteration of keypad processing. This will scan the matrix, handle debouncing,
+        // Call this periodically from the main loop.
+        static void keypad_poll();
+
+        //returns array of buttons pressed since last poll. Maximum of 5 buttons can be returned. Buttons pressed after this buffer fills up will be ignored.
+        static std::vector<Keys> get_buttons_pressed();
+
+    private:
+        static uint8_t button_sense_pin[6];
+        static uint8_t button_pwr_pin[4];
+        static Keys button_locations[6][4];
+        static char button_names[6][4][6];
+
+        static bool button_debounce_states[6][4][2];
+        static bool button_pressed_last_loop[6][4];
+        static bool button_debounce_pointer;
+
+        static std::vector<Keys> buttons_pressed_since_last_poll;
+
+};
+
 #endif // KEYPAD_H

@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <math.h>
 #include <memory.h>
+#include <vector>
+
 #include "pico/stdlib.h"
 #include "pico/multicore.h"
 #include "hardware/adc.h"
 #include "hardware/spi.h"
 
-#include "pindefs.c"
+#include "pindefs.cpp"
 #include "keypad.h"
 
 //turn audio amp power on or off
@@ -68,7 +70,10 @@ void init_all(){
 
 }
 
-
+char key_names[23][6] = {
+    "Null", "Up", "Down", "Left", "Right", "Lock", "Side1", "Side2",
+    "PTT", "Back", "Enter", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "*", "#"
+};
 
 //what will run on core 0
 void core_0() {
@@ -78,37 +83,7 @@ void core_0() {
     bool led_state = false;
     gpio_put(LED_STATUS, 1);
    
-    //define button matricies
-    uint8_t button_sense_pin[6] = {BTN_MTX_0, BTN_MTX_1, BTN_MTX_2, BTN_MTX_3, BTN_MTX_4, BTN_MTX_5};
-    uint8_t button_pwr_pin[4] = {BTN_MTX_A, BTN_MTX_B, BTN_MTX_C, BTN_MTX_D};
-    char button_names[6][4][6] = {
-        {"Left", "Up", "Right", "Side2"},
-        {"Back", "Down", "Enter", "Side1"},
-        {"1", "2", "3", "PTT"},
-        {"4", "5", "6", "Lock"},
-        {"7", "8", "9", "NA"},
-        {"*", "0", "#", "NA"}
-    };
-
-    //button states [sense][pwr][debounce_pointer] debounce_pointer toggles every loop to store last two states
-    bool button_debounce_states[6][4][2] = {0}; //debounce states for each button
-    bool button_pressed_last_loop[6][4] = {0}; //used to make sure button press is only registered once, not every loop
-    //raw battery voltage ready by pin V_BAT
-
-    //init button pins
-    for (int i = 0; i < 6; i++) {
-        gpio_init(button_sense_pin[i]);
-        gpio_set_dir(button_sense_pin[i], GPIO_IN);
-        gpio_pull_down(button_sense_pin[i]);
-    }
-    for (int i = 0; i < 4; i++) {
-        gpio_init(button_pwr_pin[i]);
-        gpio_set_dir(button_pwr_pin[i], GPIO_OUT);
-        gpio_put(button_pwr_pin[i], 0);
-    }
-
-    bool button_debounce_pointer=0;
-    bool a_button_has_been_pressed = false;
+    Keypad::keypad_init();
 
     uint8_t encoder_state = 0;
 
@@ -131,29 +106,12 @@ void core_0() {
 
         if (!(counter%10)){
             //scan buttons
-            for (int j = 0; j < 4; j++) {
-                gpio_put(button_pwr_pin[j], 1);
-                sleep_us(1);
-                for (int i = 0; i < 6; i++) {
-                    button_debounce_states[i][j][button_debounce_pointer] = gpio_get(button_sense_pin[i]);
-                }
-                gpio_put(button_pwr_pin[j], 0);
-                sleep_us(1);
-            }
-            button_debounce_pointer = !button_debounce_pointer;
-            //check for button presses with debounce, and only trigger the button action on rising edge
-            for (int i = 0; i < 6; i++) {
-                for (int j = 0; j < 4; j++) {
-                    if(button_debounce_states[i][j][0] && button_debounce_states[i][j][1]){
-                        if(!button_pressed_last_loop[i][j]){
-                            printf("%s\n", button_names[i][j]);
-                        }
-                        button_pressed_last_loop[i][j] = true;
-                    } else{
-                        button_pressed_last_loop[i][j] = false;
-                    }
-                }
-            }
+            Keypad::keypad_poll();
+            std::vector<Keys> pressed_keys = Keypad::get_buttons_pressed();
+            for(uint8_t i=0; i<pressed_keys.size(); i++){
+                printf("Key Pressed: %s\n", key_names[pressed_keys[i]]);
+            }   
+            
         }
 
         //process encoder

@@ -40,6 +40,7 @@
     "files.associations": {
         "*.cps": "javascript",
         "*.h": "cpp",
-        "cstdint": "c"
+        "cstdint": "c",
+        "vector": "cpp"
     }
 }
