@@ -6359,7 +6359,7 @@
 	)
 	(text "Other amplifier options\n\nBT33L - $10, 2 watt max without output filtering\nMMZ09332BT1 - $7, higher wattage, but not for new designs according to NXP\nGRF5604 - $5, 6W. Seems like a good choice\nGRF5504 - $5, 3.5W. Reccomended by GRF because it will be easier to match across the whole band\n"
 		(exclude_from_sim no)
-		(at 232.156 162.814 0)
+		(at 232.41 158.496 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6668,16 +6668,16 @@
 		(uuid "7badcbd9-3e8e-40fd-bd04-623ad2ba7e93")
 	)
 	(junction
+		(at 80.61 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c43026f-1d8c-46df-b356-7c1334b5e3f0")
+	)
+	(junction
 		(at 219.71 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7cbb7e88-4ae4-4624-ba79-0886263babad")
-	)
-	(junction
-		(at 179.07 26.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7d2bd39c-8fd0-437f-8d57-ff99a661d98d")
 	)
 	(junction
 		(at 243.84 26.67)
@@ -6786,12 +6786,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a0d44ec5-214f-47d3-a2ea-3a7b71072a3f")
-	)
-	(junction
-		(at 81.28 160.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a16f52c9-d912-4370-9884-42ddbf9d0309")
 	)
 	(junction
 		(at 100.33 34.29)
@@ -7004,6 +6998,12 @@
 		(uuid "eac9663e-325c-4948-be56-f8ba9476fb99")
 	)
 	(junction
+		(at 63.5 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ecb1131a-98ef-4f1e-974f-c4e750314d1f")
+	)
+	(junction
 		(at 87.63 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7040,6 +7040,12 @@
 		(uuid "fbf13702-eb9c-4368-a94f-f1df0734f958")
 	)
 	(junction
+		(at 58.42 191.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fc45f8b4-7d65-47d9-b9bd-bc7a3d94c018")
+	)
+	(junction
 		(at 95.25 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7048,6 +7054,10 @@
 	(no_connect
 		(at 52.07 62.23)
 		(uuid "02ac5dc7-1f4c-4998-95bb-72cb2be53475")
+	)
+	(no_connect
+		(at 187.96 24.13)
+		(uuid "449181fc-8033-42d8-bec2-5cd265d157d4")
 	)
 	(no_connect
 		(at 26.67 74.93)
@@ -7159,16 +7169,6 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 24.13) (xy 187.96 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ad36d9b-8022-4265-b65a-fe87c49cb527")
-	)
-	(wire
-		(pts
 			(xy 36.83 16.51) (xy 41.91 16.51)
 		)
 		(stroke
@@ -7256,6 +7256,16 @@
 			(type default)
 		)
 		(uuid "13204f4a-aa33-46b7-8cf6-c27cdae01276")
+	)
+	(wire
+		(pts
+			(xy 78.74 160.02) (xy 80.61 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1480961e-7b9c-4ab2-a2fa-ba7094ac0ef2")
 	)
 	(wire
 		(pts
@@ -7489,13 +7499,13 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 160.02) (xy 90.77 160.02)
+			(xy 63.5 191.77) (xy 63.5 189.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2f6402e6-ea10-4daf-a0ef-12354e683112")
+		(uuid "2dcc4394-c952-485b-a148-ad0c70e9f5f9")
 	)
 	(wire
 		(pts
@@ -7506,16 +7516,6 @@
 			(type default)
 		)
 		(uuid "2ff11666-c3bf-442f-a4c4-b49d540288a3")
-	)
-	(wire
-		(pts
-			(xy 179.07 24.13) (xy 179.07 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "304da769-7e4f-4a5a-8ee9-8d4a4ea63444")
 	)
 	(wire
 		(pts
@@ -7676,6 +7676,16 @@
 			(type default)
 		)
 		(uuid "449d5f23-ba43-4eab-8e5e-5a15ac5ae48c")
+	)
+	(wire
+		(pts
+			(xy 53.34 191.77) (xy 53.34 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45ff26c1-d06c-4f3b-a6be-606522676253")
 	)
 	(wire
 		(pts
@@ -7989,16 +7999,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 24.13) (xy 179.07 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ee5927a-2cc0-40d9-87b8-5f2e3381d78a")
-	)
-	(wire
-		(pts
 			(xy 95.25 30.48) (xy 95.25 34.29)
 		)
 		(stroke
@@ -8146,6 +8146,16 @@
 			(type default)
 		)
 		(uuid "653dcc74-6dd6-48c0-af4b-46d7cb20b0f2")
+	)
+	(wire
+		(pts
+			(xy 63.5 184.15) (xy 69.85 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "671134e3-abaa-4cc5-b124-d09dd66ff949")
 	)
 	(wire
 		(pts
@@ -8299,6 +8309,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 191.77) (xy 58.42 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a1cb362-08ef-4aa8-a30a-5f2b09e19e8f")
+	)
+	(wire
+		(pts
 			(xy 106.68 69.85) (xy 106.68 67.31)
 		)
 		(stroke
@@ -8369,7 +8389,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.61 160.02) (xy 81.28 160.02)
+			(xy 80.61 160.02) (xy 90.77 160.02)
 		)
 		(stroke
 			(width 0)
@@ -8779,7 +8799,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 26.67) (xy 187.96 26.67)
+			(xy 163.83 26.67) (xy 187.96 26.67)
 		)
 		(stroke
 			(width 0)
@@ -9199,7 +9219,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 184.15) (xy 59.69 184.15)
+			(xy 53.34 184.15) (xy 63.5 184.15)
 		)
 		(stroke
 			(width 0)
@@ -9356,16 +9376,6 @@
 			(type default)
 		)
 		(uuid "e007e1d3-d89a-4f8b-b812-8f6021c4a213")
-	)
-	(wire
-		(pts
-			(xy 163.83 26.67) (xy 179.07 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1c6e09e-2b5a-4d1a-823b-93cd899654a2")
 	)
 	(wire
 		(pts
@@ -9626,6 +9636,16 @@
 			(type default)
 		)
 		(uuid "f70ce2c2-1de5-40c1-bbb6-3931846c0312")
+	)
+	(wire
+		(pts
+			(xy 58.42 191.77) (xy 53.34 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7792979-62ea-4c02-b7a5-f423013458eb")
 	)
 	(wire
 		(pts
@@ -10533,7 +10553,7 @@
 	)
 	(global_label "3V3"
 		(shape output)
-		(at 59.69 184.15 0)
+		(at 69.85 184.15 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10543,7 +10563,7 @@
 		)
 		(uuid "b3e61f65-1333-44ad-952d-b611f63b3971")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 66.1828 184.15 0)
+			(at 76.3428 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11134,7 +11154,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 31.75 63.5 0)
 			(effects
 				(font
@@ -11407,7 +11427,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 267.97 77.47 0)
 			(effects
 				(font
@@ -11552,7 +11572,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 90.17 85.09 0)
 			(effects
 				(font
@@ -11820,7 +11840,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 246.38 72.39 0)
 			(effects
 				(font
@@ -11887,7 +11907,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 80.61 157.48 0)
 			(effects
 				(font
@@ -12132,75 +12152,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 182.88 24.13 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2c80ab90-f341-44ca-b0bc-61cf3ccba4d4")
-		(property "Reference" "R17"
-			(at 182.372 18.288 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0"
-			(at 184.404 20.828 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 182.88 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 182.88 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 182.88 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "01ff87d5-3eab-4e99-a73d-39dd821e644d")
-		)
-		(pin "2"
-			(uuid "10add8c6-a5ad-4706-ac6e-4151e2fb6598")
-		)
-		(instances
-			(project "OSS-Radio_2M70CM"
-				(path "/07417920-d864-4fe6-bbe4-9feb9e01fbee"
-					(reference "R17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 97.79 53.34 270)
 		(unit 1)
@@ -12294,7 +12245,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 33.02 99.06 0)
 			(effects
 				(font
@@ -12599,7 +12550,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 137.16 74.93 0)
 			(effects
 				(font
@@ -13135,7 +13086,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 33.02 93.98 0)
 			(effects
 				(font
@@ -13813,7 +13764,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 33.02 88.9 0)
 			(effects
 				(font
@@ -13914,6 +13865,73 @@
 			(project "OSS-Radio_2M70CM"
 				(path "/07417920-d864-4fe6-bbe4-9feb9e01fbee"
 					(reference "C61")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 52.07 147.32 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5cf8b954-4c02-4279-a581-bc9be72fea12")
+		(property "Reference" "#PWR014"
+			(at 52.07 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 52.07 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 52.07 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4f84961a-daa5-47ac-a02c-a5f14b1dde66")
+		)
+		(instances
+			(project "OSS-Radio_2M70CM"
+				(path "/07417920-d864-4fe6-bbe4-9feb9e01fbee"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -14081,7 +14099,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 90.77 157.48 0)
 			(effects
 				(font
@@ -14395,6 +14413,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 63.5 186.69 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6858021a-d3d4-4fc0-9499-cd8308be808a")
+		(property "Reference" "C18"
+			(at 65.024 187.706 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47uF"
+			(at 63.754 185.166 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 63.5 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 63.5 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a8775387-63e1-456b-a3a4-5196914a534a")
+		)
+		(pin "2"
+			(uuid "6f72ac96-08f9-4eff-b3a9-bf337829d1b7")
+		)
+		(instances
+			(project "OSS-Radio_2M70CM"
+				(path "/07417920-d864-4fe6-bbe4-9feb9e01fbee"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Antenna_Shield")
 		(at 251.46 26.67 270)
 		(mirror x)
@@ -14625,7 +14713,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 33.02 109.22 0)
 			(effects
 				(font
@@ -14691,7 +14779,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 43.18 184.15 0)
 			(effects
 				(font
@@ -15161,7 +15249,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 24.13 91.44 0)
 			(effects
 				(font
@@ -15361,7 +15449,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 24.13 101.6 0)
 			(effects
 				(font
@@ -15494,7 +15582,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 124.46 161.29 0)
 			(effects
 				(font
@@ -15900,7 +15988,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 238.76 26.67 0)
 			(effects
 				(font
@@ -15966,7 +16054,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 33.02 104.14 0)
 			(effects
 				(font
@@ -16033,7 +16121,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 133.35 158.75 0)
 			(effects
 				(font
@@ -16941,7 +17029,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 53.34 189.23 0)
+		(at 58.42 191.77 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16951,7 +17039,7 @@
 		(fields_autoplaced yes)
 		(uuid "a65d79db-7a15-4d9a-bb33-b7a67bff0ea0")
 		(property "Reference" "#PWR017"
-			(at 53.34 195.58 0)
+			(at 58.42 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16960,7 +17048,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 53.34 194.31 0)
+			(at 58.42 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16968,7 +17056,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 189.23 0)
+			(at 58.42 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16977,7 +17065,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 189.23 0)
+			(at 58.42 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16986,7 +17074,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 53.34 189.23 0)
+			(at 58.42 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17001,6 +17089,73 @@
 			(project "OSS-Radio_2M70CM"
 				(path "/07417920-d864-4fe6-bbe4-9feb9e01fbee"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 54.61 161.29 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7fb767e-2a5f-49ad-aa33-46fba491c65c")
+		(property "Reference" "#PWR015"
+			(at 54.61 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 54.61 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 54.61 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0b3f1449-c74b-4758-9c78-e3d00c9b85c6")
+		)
+		(instances
+			(project "OSS-Radio_2M70CM"
+				(path "/07417920-d864-4fe6-bbe4-9feb9e01fbee"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -17143,6 +17298,72 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
+		(at 52.07 147.32 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aed85e49-747b-49fc-a18f-d1a94d66bbed")
+		(property "Reference" "TP23"
+			(at 53.594 151.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 52.578 149.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro_Mini"
+			(at 46.99 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 52.07 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a13e10fd-688f-4fa2-89e8-4f3f58dc3d71")
+		)
+		(instances
+			(project "OSS-Radio_2M70CM"
+				(path "/07417920-d864-4fe6-bbe4-9feb9e01fbee"
+					(reference "TP23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
 		(at 24.13 91.44 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17168,7 +17389,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 24.13 86.36 0)
 			(effects
 				(font
@@ -17234,7 +17455,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 182.88 41.91 0)
 			(effects
 				(font
@@ -17513,7 +17734,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 85.09 74.93 0)
 			(effects
 				(font
@@ -17547,6 +17768,72 @@
 			(project "OSS-Radio_2M70CM"
 				(path "/07417920-d864-4fe6-bbe4-9feb9e01fbee"
 					(reference "TP10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 54.61 161.29 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b845e4ca-44e2-46a9-b490-044e80e71ee2")
+		(property "Reference" "TP24"
+			(at 56.134 165.354 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 55.118 163.068 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro_Mini"
+			(at 49.53 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 54.61 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f3bd9c0d-2524-4695-9d7d-7da02ee43f85")
+		)
+		(instances
+			(project "OSS-Radio_2M70CM"
+				(path "/07417920-d864-4fe6-bbe4-9feb9e01fbee"
+					(reference "TP24")
 					(unit 1)
 				)
 			)
@@ -17647,7 +17934,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 132.08 161.29 0)
 			(effects
 				(font
@@ -18255,7 +18542,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 175.26 85.09 0)
 			(effects
 				(font
@@ -18764,7 +19051,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 81.28 160.02 270)
+		(at 78.74 160.02 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18772,7 +19059,7 @@
 		(dnp no)
 		(uuid "d7f32edf-d13e-4424-8ff6-773d2899e828")
 		(property "Reference" "#PWR022"
-			(at 74.93 160.02 0)
+			(at 72.39 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18781,7 +19068,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 76.2 160.274 90)
+			(at 73.66 160.274 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18789,7 +19076,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 160.02 0)
+			(at 78.74 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18798,7 +19085,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 160.02 0)
+			(at 78.74 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18807,7 +19094,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 81.28 160.02 0)
+			(at 78.74 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19370,7 +19657,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 24.13 106.68 0)
 			(effects
 				(font
@@ -19573,7 +19860,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 39.37 130.81 0)
 			(effects
 				(font
@@ -20410,7 +20697,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 53.34 186.69 0)
 			(effects
 				(font
@@ -20615,7 +20902,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 24.13 96.52 0)
 			(effects
 				(font
