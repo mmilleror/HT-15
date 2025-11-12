@@ -7182,7 +7182,7 @@
 		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP20"
-			(at 0.25 -2.5 90)
+			(at -0.1 -2.5 90)
 			(layer "F.SilkS")
 			(uuid "ed7c2416-145f-427b-b4b9-0288d978a688")
 			(effects
@@ -13614,7 +13614,7 @@
 		(descr "Texas RGW0020A VQFN, 20 Pin (https://www.ti.com/lit/ds/symlink/tps7a47.pdf#page=29), generated with kicad-footprint-generator ipc_noLead_generator.py")
 		(tags "Texas VQFN NoLead")
 		(property "Reference" "U4"
-			(at 1.75 4 180)
+			(at -1.15 4.1 180)
 			(layer "F.SilkS")
 			(uuid "718e2686-661e-41f1-ad60-2a3ce968d66d")
 			(effects
@@ -14959,7 +14959,7 @@
 		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP1"
-			(at 0 -1.25 0)
+			(at -0.1 -1.25 0)
 			(layer "F.SilkS")
 			(uuid "3fa2fa72-e2d9-43e8-af30-d80fc5c96a27")
 			(effects
@@ -24104,6 +24104,19 @@
 		(layer "Edge.Cuts")
 		(uuid "ee17650f-03e8-4380-93be-83738eb03483")
 	)
+	(gr_text "Arkos Engineering\n2M70CM RF Module\nRev 0.1  Designed in USA"
+		(at 139.5 84 0)
+		(layer "F.SilkS")
+		(uuid "01d013f9-a4b2-486b-9d2d-d33c0a6574ad")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.125)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(segment
 		(start 140.399874 87.75)
 		(end 136.919874 87.75)
@@ -24957,15 +24970,6 @@
 		(uuid "43261778-a529-4ca1-9617-7d55f89c6b8c")
 	)
 	(via
-		(at 145 81)
-		(size 0.45)
-		(drill 0.3)
-		(layers "F.Cu" "B.Cu")
-		(free yes)
-		(net 2)
-		(uuid "45ea4e3f-6e4d-4b17-a73b-b30f7c9fb31a")
-	)
-	(via
 		(at 163 96.25)
 		(size 0.45)
 		(drill 0.3)
@@ -25178,15 +25182,6 @@
 		(free yes)
 		(net 2)
 		(uuid "5a7d38bf-d8fc-4a68-b7d0-fd42605709b6")
-	)
-	(via
-		(at 147 81)
-		(size 0.45)
-		(drill 0.3)
-		(layers "F.Cu" "B.Cu")
-		(free yes)
-		(net 2)
-		(uuid "5b6a5c85-a9e1-45cc-bf31-95aaf62462dc")
 	)
 	(via
 		(at 151.5 119.275)
@@ -25421,15 +25416,6 @@
 		(free yes)
 		(net 2)
 		(uuid "7841d52e-8178-4d23-9393-9ece4bf9ac7e")
-	)
-	(via
-		(at 141 81)
-		(size 0.45)
-		(drill 0.3)
-		(layers "F.Cu" "B.Cu")
-		(free yes)
-		(net 2)
-		(uuid "7968b25f-d6f9-4c6c-9516-28c86d39dd7f")
 	)
 	(via
 		(at 153.5 119)
@@ -25819,15 +25805,6 @@
 		(uuid "af4d7437-b931-4b3e-8381-45c804651c0b")
 	)
 	(via
-		(at 149 81)
-		(size 0.45)
-		(drill 0.3)
-		(layers "F.Cu" "B.Cu")
-		(free yes)
-		(net 2)
-		(uuid "b10a01ee-aa17-40ff-95ac-4c19c08c73a6")
-	)
-	(via
 		(at 153.75 103.75)
 		(size 0.45)
 		(drill 0.3)
@@ -25988,15 +25965,6 @@
 		(free yes)
 		(net 2)
 		(uuid "c63d479b-ed33-4258-b028-58b1fa075072")
-	)
-	(via
-		(at 143 81)
-		(size 0.45)
-		(drill 0.3)
-		(layers "F.Cu" "B.Cu")
-		(free yes)
-		(net 2)
-		(uuid "c6d8d06d-2584-4713-9636-7c476406b8ee")
 	)
 	(via
 		(at 139.969423 89.997634)

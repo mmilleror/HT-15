@@ -6273,13 +6273,14 @@
 					(justify bottom)
 				)
 			)
-			(property "Value" "WA-SMSI_9774XXX243"
-				(at -3.048 -4.572 0)
+			(property "Value" "M2 x 2mm"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify bottom)
+					(hide yes)
 				)
 			)
 			(property "Footprint" "WA-SMSI_9774XXX243:WA-SMSI_9774020243"
@@ -6341,16 +6342,6 @@
 				)
 			)
 			(property "INNER-THREAD-LENGTH" "-"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "VALUE" "M2 x 2mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -11438,7 +11429,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "0ba8388c-c60b-4567-b756-9303592cb98b")
@@ -11518,7 +11509,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DF40C-24DP-0.4V51"
+		(property "Value" "DF40C-24DP-0.4V"
 			(at 21.59 157.4799 90)
 			(effects
 				(font
@@ -11537,7 +11528,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "DF40C-24DP-0.4V51"
+		(property "Datasheet" "https://www.hirose.com/en/product/document?clcode=&productname=&series=DF40&documenttype=Catalog&lang=en&documentid=en_DF40_CAT"
 			(at 35.56 127 0)
 			(effects
 				(font
@@ -11554,6 +11545,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "DF40C-24DP-0.4V"
+			(at 35.56 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "3"
@@ -11642,7 +11641,7 @@
 		(at 273.05 77.47 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -11741,7 +11740,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8815-SEEPROM-AT24CS01-02-Datasheet.pdf"
+		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MPD/ProductDocuments/DataSheets/20006330A.pdf"
 			(at 85.09 133.35 0)
 			(effects
 				(font
@@ -11757,6 +11756,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "AT24CS01-STUM-T"
+			(at 85.09 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "4"
@@ -11788,7 +11795,7 @@
 		(at 95.25 85.09 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "182f6583-a780-444d-a82b-7ed3a427dd54")
@@ -11989,7 +11996,7 @@
 		(at 246.38 77.47 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -12392,7 +12399,7 @@
 		(at 33.02 104.14 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "2e42afe6-4db5-4087-bc58-43de85c2c71a")
@@ -12624,7 +12631,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "SKY13330-397LF"
+		(property "Datasheet" "https://www.skyworksinc.com/-/media/B49B0E0897F04C66BD3D7DFD2A11187B.pdf"
 			(at 228.6 24.13 0)
 			(effects
 				(font
@@ -12641,6 +12648,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "SKY13330-397LF"
+			(at 228.6 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "10"
@@ -12697,7 +12712,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "338fc6d8-1bf6-48e0-9ebf-d5c25fe0dbc6")
@@ -13297,7 +13312,7 @@
 		(at 33.02 99.06 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "3e3910a2-16d0-4613-962d-e5ec70c0ca7e")
@@ -13414,6 +13429,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "OnSemi BSS138 "
+			(at 138.43 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "3"
@@ -13549,6 +13572,14 @@
 		)
 		(property "Description" "LQG15WZ62NH02D"
 			(at 148.844 81.534 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PART-NUMBER" "LQG15WH62NG02D"
+			(at 142.24 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13907,7 +13938,7 @@
 		(at 33.02 93.98 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "55e362cc-f378-4bfc-9604-b32191c22cc8")
@@ -14425,6 +14456,14 @@
 				)
 			)
 		)
+		(property "PART-NUMBER" "LQW15AN6N8G80D"
+			(at 120.65 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "508cea12-a786-4131-ae9e-12831027d994")
 		)
@@ -14697,6 +14736,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "MMCX-J-P-H-RA-TH1"
+			(at 251.46 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "38fac7cc-8b61-4ca5-8d0a-d14d90070199")
 		)
@@ -14783,7 +14830,7 @@
 		(at 33.02 114.3 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "6ce56940-9b26-40e8-a407-741b92caffd6")
@@ -14913,7 +14960,7 @@
 		(at 57.15 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "6e09aea7-2e6b-46f4-9844-2d56465b31fc")
@@ -15214,7 +15261,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/9774020243R.pdf"
 			(at 255.27 144.78 0)
 			(effects
 				(font
@@ -15359,7 +15406,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/fair-rite-products-corp/2508051217Y6/8594305"
+		(property "Datasheet" "https://www.fair-rite.com/wp-content/themes/fair-rite/print_product.php?pid=19226"
 			(at 45.72 129.54 0)
 			(effects
 				(font
@@ -15375,6 +15422,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "2508051217Y6"
+			(at 45.72 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -15598,7 +15653,7 @@
 		(at 24.13 96.52 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "763b34a5-286c-4f8f-a63f-ff0d3efa6958")
@@ -15865,7 +15920,7 @@
 		(at 24.13 106.68 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "78e067db-045c-45fb-901e-d81eedeebc76")
@@ -16365,7 +16420,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/fair-rite-products-corp/2508051217Y6/8594305"
+		(property "Datasheet" "https://www.fair-rite.com/wp-content/themes/fair-rite/print_product.php?pid=19226"
 			(at 53.34 175.26 0)
 			(effects
 				(font
@@ -16381,6 +16436,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "2508051217Y6"
+			(at 53.34 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -16470,7 +16533,7 @@
 		(at 243.84 26.67 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -16537,7 +16600,7 @@
 		(at 33.02 109.22 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "84f5456d-7717-4e68-af5c-2874c5530082")
@@ -16603,7 +16666,7 @@
 		(at 128.27 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -16718,6 +16781,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "LQW15AN5N6G8ZD"
+			(at 172.72 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d9950af3-014d-4517-bf8b-9ee33103829f")
 		)
@@ -16771,7 +16842,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/9774020243R.pdf"
 			(at 226.06 144.78 0)
 			(effects
 				(font
@@ -17315,7 +17386,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://support.epson.biz/td/api/doc_check.php?dl=app_TG2520SMN&lang=en"
+		(property "Datasheet" "https://support.epson.biz/td/api/doc_check.php?dl=brief_TG-5006CG&lang=en"
 			(at 26.67 67.31 0)
 			(effects
 				(font
@@ -17331,6 +17402,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "TG-5006CG-43L 40.0000M3"
+			(at 29.21 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "4"
@@ -17546,6 +17625,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "LQG15WZ33NG02D"
+			(at 113.03 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "875bd2cc-d317-4976-8732-6e346ea555e7")
 		)
@@ -17599,7 +17686,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/9774020243R.pdf"
 			(at 196.85 144.78 0)
 			(effects
 				(font
@@ -17745,7 +17832,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "GRF5504"
+		(property "Datasheet" "https://www.guerrilla-rf.com/products/DataSheet?sku=5504&file_name=GRF5504DS.pdf"
 			(at 180.34 83.82 0)
 			(effects
 				(font
@@ -17762,6 +17849,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "GRF5504"
+			(at 180.34 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "4"
@@ -18232,7 +18327,7 @@
 		(at 74.93 186.69 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "aed85e49-747b-49fc-a18f-d1a94d66bbed")
@@ -18298,7 +18393,7 @@
 		(at 24.13 91.44 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "af27121b-eee9-4509-a0ba-d4429018a6f9")
@@ -18364,7 +18459,7 @@
 		(at 187.96 41.91 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "afb4ad5c-fc7f-494b-afdf-a330a57dcece")
@@ -18478,6 +18573,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "LQG15WH20NG02D"
+			(at 256.54 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -18619,6 +18722,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "OnSemi BSS138 "
+			(at 152.4 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "c750cf81-43ca-4d6f-9d6c-ca74f4544c63")
 		)
@@ -18643,7 +18754,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "b767ea7b-251d-4df9-9361-94c9ba715ec2")
@@ -18709,7 +18820,7 @@
 		(at 85.09 186.69 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "b845e4ca-44e2-46a9-b490-044e80e71ee2")
@@ -19027,6 +19138,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "LQG15HN39NG02D"
+			(at 246.38 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -19450,7 +19569,7 @@
 		(at 170.18 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -19897,6 +20016,14 @@
 				)
 			)
 		)
+		(property "PART-NUMBER" "LQW15AW51NG80D"
+			(at 129.54 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a29ad83a-428f-4368-ba2a-4034cccdd0fa")
 		)
@@ -20096,6 +20223,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "TPS7A4701RGWR"
+			(at 111.76 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -20565,7 +20700,7 @@
 		(at 24.13 111.76 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "e28e6ca0-0e81-440d-870e-dfe07a124f17")
@@ -20834,7 +20969,7 @@
 		(at 55.88 175.26 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -20931,7 +21066,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/cc1200.pdf"
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fcc1200"
 			(at 57.15 30.48 0)
 			(effects
 				(font
@@ -20947,6 +21082,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "CC1200RHBR"
+			(at 69.85 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "12"
@@ -21245,6 +21388,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "OnSemi BSS138 "
+			(at 163.83 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "6417d751-0a3e-4e34-a374-df29e5041257")
 		)
@@ -21381,6 +21532,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "LQW15AN22NG0ZD"
+			(at 266.7 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -21943,7 +22102,7 @@
 		(at 24.13 101.6 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "ff23653c-fcd8-4a57-8e9b-8d304c4c2487")
