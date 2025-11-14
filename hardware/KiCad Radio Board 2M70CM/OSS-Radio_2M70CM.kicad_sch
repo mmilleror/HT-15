@@ -6728,6 +6728,12 @@
 		(uuid "2b096cf7-ac1e-41ea-84a1-5d938a1e52d3")
 	)
 	(junction
+		(at 132.08 163.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2cdc2f32-4333-428c-a18c-f741b73f4003")
+	)
+	(junction
 		(at 100.33 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6744,6 +6750,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2e6e8bcb-4e55-4116-9461-bf579ae5c0ed")
+	)
+	(junction
+		(at 128.27 163.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "30521948-e1d3-46ad-8116-cbbf19cc2f36")
 	)
 	(junction
 		(at 100.33 41.91)
@@ -6774,12 +6786,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3544c4cc-07f2-455e-aced-6dfa5fc06743")
-	)
-	(junction
-		(at 128.27 163.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3816a51a-e74a-4aba-b94e-b40f8a256941")
 	)
 	(junction
 		(at 120.65 85.09)
@@ -6902,6 +6908,12 @@
 		(uuid "75b28371-47a7-404a-b261-72d71c50bcaf")
 	)
 	(junction
+		(at 53.34 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7703485b-ca3e-4c97-9891-f8952ecbaa1f")
+	)
+	(junction
 		(at 187.96 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6956,6 +6968,12 @@
 		(uuid "81a385b5-e7d3-44d1-94cc-5756df8d9f7f")
 	)
 	(junction
+		(at 139.7 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "83901c0a-57cb-4c80-ad43-02aa7521d9b4")
+	)
+	(junction
 		(at 85.09 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6998,12 +7016,6 @@
 		(uuid "956c6e50-3458-449e-a5ad-3bcfbf9ac704")
 	)
 	(junction
-		(at 48.26 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "96d12bd2-fa09-4422-bb80-994809922c27")
-	)
-	(junction
 		(at 77.47 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7040,12 +7052,6 @@
 		(uuid "a1a0481c-0d90-4c0d-a7f3-7f569fc04334")
 	)
 	(junction
-		(at 53.34 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a4168dda-5dc4-4191-a867-01812eeafda2")
-	)
-	(junction
 		(at 163.83 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7074,6 +7080,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a927a4f3-16ac-4bcc-91d0-271c4c7215e5")
+	)
+	(junction
+		(at 124.46 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa0ee2ab-db4c-41f2-b050-4576fcb7faa3")
 	)
 	(junction
 		(at 35.56 76.2)
@@ -7178,12 +7190,6 @@
 		(uuid "d37db224-e898-4167-a1db-6f3506d2230e")
 	)
 	(junction
-		(at 124.46 158.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d51af181-5a57-45af-a555-1d4510f1eccc")
-	)
-	(junction
 		(at 77.47 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7236,12 +7242,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eac9663e-325c-4948-be56-f8ba9476fb99")
-	)
-	(junction
-		(at 58.42 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ecb1131a-98ef-4f1e-974f-c4e750314d1f")
 	)
 	(junction
 		(at 87.63 52.07)
@@ -7316,6 +7316,16 @@
 			(type default)
 		)
 		(uuid "001b9cc6-12e7-4a2d-aa2c-fe95724150b5")
+	)
+	(wire
+		(pts
+			(xy 139.7 158.75) (xy 132.08 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00d29fa9-be1f-4d93-a885-9ac732bbccd7")
 	)
 	(wire
 		(pts
@@ -7399,7 +7409,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 129.54) (xy 48.26 129.54)
+			(xy 57.15 129.54) (xy 53.34 129.54)
 		)
 		(stroke
 			(width 0)
@@ -7739,16 +7749,6 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 134.62) (xy 53.34 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e2677de-22d0-48f2-84f2-d9d7219c9420")
-	)
-	(wire
-		(pts
 			(xy 69.85 95.25) (xy 69.85 96.52)
 		)
 		(stroke
@@ -7756,6 +7756,16 @@
 			(type default)
 		)
 		(uuid "2ff11666-c3bf-442f-a4c4-b49d540288a3")
+	)
+	(wire
+		(pts
+			(xy 121.92 158.75) (xy 124.46 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ff93f34-7e18-4bdd-b3b5-cbcfb47a9325")
 	)
 	(wire
 		(pts
@@ -7776,16 +7786,6 @@
 			(type default)
 		)
 		(uuid "333ee591-0b1b-4814-8dbd-ffafcec0a46c")
-	)
-	(wire
-		(pts
-			(xy 121.92 158.75) (xy 124.46 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "347dd0f9-67ff-4b2b-aaa3-722f992279bf")
 	)
 	(wire
 		(pts
@@ -7919,6 +7919,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 163.83) (xy 139.7 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46c08255-c3ee-435f-8c76-0773b9d2cf66")
+	)
+	(wire
+		(pts
 			(xy 52.07 81.28) (xy 52.07 80.01)
 		)
 		(stroke
@@ -7989,7 +7999,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 129.54) (xy 58.42 129.54)
+			(xy 57.15 129.54) (xy 64.77 129.54)
 		)
 		(stroke
 			(width 0)
@@ -8369,16 +8379,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 129.54) (xy 64.77 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "671134e3-abaa-4cc5-b124-d09dd66ff949")
-	)
-	(wire
-		(pts
 			(xy 113.03 92.71) (xy 116.84 92.71)
 		)
 		(stroke
@@ -8459,7 +8459,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 163.83) (xy 132.08 163.83)
+			(xy 128.27 163.83) (xy 124.46 163.83)
 		)
 		(stroke
 			(width 0)
@@ -8536,16 +8536,6 @@
 			(type default)
 		)
 		(uuid "78ae2e96-4735-45d0-a75f-a5e93da9afaf")
-	)
-	(wire
-		(pts
-			(xy 58.42 134.62) (xy 53.34 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a1cb362-08ef-4aa8-a30a-5f2b09e19e8f")
 	)
 	(wire
 		(pts
@@ -8899,6 +8889,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 163.83) (xy 132.08 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b3e2c85-ba5b-4cc4-920e-a0ef427b3ec3")
+	)
+	(wire
+		(pts
 			(xy 36.83 67.31) (xy 39.37 67.31)
 		)
 		(stroke
@@ -8976,16 +8976,6 @@
 			(type default)
 		)
 		(uuid "a1c42b32-08aa-40b8-853a-6b05222da85d")
-	)
-	(wire
-		(pts
-			(xy 124.46 158.75) (xy 128.27 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a23525e0-5a30-4b02-8433-942f398978b3")
 	)
 	(wire
 		(pts
@@ -9329,16 +9319,6 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 163.83) (xy 128.27 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c6cd4703-fb7a-4c25-8625-bf812c40d8c8")
-	)
-	(wire
-		(pts
 			(xy 64.77 95.25) (xy 69.85 95.25)
 		)
 		(stroke
@@ -9439,6 +9419,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 137.16) (xy 53.34 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfdd30d3-5041-4ca7-8cdc-1a45f3d0b01e")
+	)
+	(wire
+		(pts
 			(xy 38.1 76.2) (xy 38.1 72.39)
 		)
 		(stroke
@@ -9466,6 +9456,16 @@
 			(type default)
 		)
 		(uuid "d4021f50-0fd4-4b3c-a81d-f6f4d75cdcf6")
+	)
+	(wire
+		(pts
+			(xy 124.46 158.75) (xy 128.27 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d40c0644-326c-456c-aab0-c97f986b9f58")
 	)
 	(wire
 		(pts
@@ -9519,7 +9519,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 158.75) (xy 132.08 158.75)
+			(xy 146.05 158.75) (xy 139.7 158.75)
 		)
 		(stroke
 			(width 0)
@@ -9586,6 +9586,16 @@
 			(type default)
 		)
 		(uuid "e007e1d3-d89a-4f8b-b812-8f6021c4a213")
+	)
+	(wire
+		(pts
+			(xy 53.34 130.81) (xy 53.34 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0b4a8c6-d388-45f9-b9ed-0f963dde9567")
 	)
 	(wire
 		(pts
@@ -9769,6 +9779,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 129.54) (xy 48.26 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f04932f3-6dc9-4c04-ae79-a944122873df")
+	)
+	(wire
+		(pts
 			(xy 234.95 57.15) (xy 246.38 57.15)
 		)
 		(stroke
@@ -9846,16 +9866,6 @@
 			(type default)
 		)
 		(uuid "f70ce2c2-1de5-40c1-bbb6-3931846c0312")
-	)
-	(wire
-		(pts
-			(xy 53.34 134.62) (xy 48.26 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7792979-62ea-4c02-b7a5-f423013458eb")
 	)
 	(wire
 		(pts
@@ -10409,7 +10419,7 @@
 	)
 	(global_label "5V_RF"
 		(shape output)
-		(at 138.43 158.75 0)
+		(at 146.05 158.75 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10419,7 +10429,7 @@
 		)
 		(uuid "53230772-73cc-4489-91c0-eff91161c6d2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 147.0395 158.75 0)
+			(at 154.6595 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11340,6 +11350,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "GJM1555C1H100GB01"
+			(at 69.85 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e57dafdc-f0ca-46b2-acdd-92c0c20174e5")
 		)
@@ -11711,7 +11729,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "175dd6d4-5540-4a31-91c5-7846f014a6fe")
 		(property "Reference" "U6"
 			(at 76.2 132.0799 0)
@@ -11723,7 +11740,7 @@
 			)
 		)
 		(property "Value" "AT24CS01-STUM"
-			(at 76.2 134.6199 0)
+			(at 83.058 139.954 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11908,6 +11925,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "RT0402FRE0751RL"
+			(at 120.65 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -12111,6 +12136,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "GMC10X7R475K10NT"
+			(at 80.61 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3864d946-8368-4ddd-b34a-6ae5b412e7bd")
 		)
@@ -12178,6 +12211,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "GRM155R71E473KA8J"
+			(at 100.33 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "64b06498-8f04-4a0e-a4c8-d0612e5cda73")
 		)
@@ -12243,6 +12284,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "GRM155R71E473KA8J"
+			(at 97.79 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -12377,6 +12426,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "GRM155R71E473KA8J"
+			(at 97.79 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -12775,6 +12832,84 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 124.46 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "348f635a-36ba-44c0-b5b3-13ad211f752d")
+		(property "Reference" "C18"
+			(at 124.714 159.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 124.968 163.322 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 124.46 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 124.46 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "GMC10X7R475K10NT"
+			(at 124.46 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38ab49ae-b2d9-4e7c-9316-c6f5d3b74cc9")
+		)
+		(pin "2"
+			(uuid "52add834-c7f4-4cf7-aad2-3b2dc896e477")
+		)
+		(instances
+			(project "OSS-Radio_2M70CM"
+				(path "/07417920-d864-4fe6-bbe4-9feb9e01fbee"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 100.33 64.77 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12823,6 +12958,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "GRM155R71E103KA1J"
+			(at 100.33 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -13092,6 +13235,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "GRM155R71E473KA8J"
+			(at 97.79 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "98a5dc49-a3a9-49ac-94da-017a6f2c07b5")
 		)
@@ -13223,6 +13374,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "GRM033R71A152KA01D"
+			(at 46.99 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2bcad50a-97c1-4c81-a27a-3f3eaebbeb7d")
 		)
@@ -13290,6 +13449,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "RC0402JR-070RL"
+			(at 158.75 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -13509,6 +13676,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "RC0402FR-136K8L"
+			(at 173.99 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "88b436d8-1520-44d9-b2e1-a2a45a41213a")
 		)
@@ -13543,7 +13718,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "62n"
+		(property "Value" "56n"
 			(at 146.558 76.2 0)
 			(effects
 				(font
@@ -13570,7 +13745,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "LQG15WZ62NH02D"
+		(property "Description" "Inductor, small symbol"
 			(at 148.844 81.534 0)
 			(effects
 				(font
@@ -13578,7 +13753,7 @@
 				)
 			)
 		)
-		(property "PART-NUMBER" "LQG15WH62NG02D"
+		(property "PART-NUMBER" "LQW15AW56NG80D"
 			(at 142.24 77.47 0)
 			(effects
 				(font
@@ -13654,6 +13829,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "RC0402FR-073K3L"
+			(at 144.78 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fa17be7a-f35e-4b34-a3bf-25f4d4114a43")
 		)
@@ -13719,6 +13902,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "GJM1555C1H100GB01"
+			(at 224.79 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -13851,6 +14042,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "RC0402FR-073K3L"
+			(at 171.45 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -14043,6 +14242,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 85.09 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "GRM155C81A105KA2J"
 			(at 85.09 99.06 0)
 			(effects
 				(font
@@ -14252,6 +14460,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "RC0402JR-070RL"
+			(at 158.75 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a919a749-2bca-46d7-a12e-85eee4074229")
 		)
@@ -14319,6 +14535,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "GMC10X7R475K10NT"
+			(at 90.77 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -14448,7 +14672,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "LQG15WZ6N8H02D"
+		(property "Description" "Inductor, small symbol"
 			(at 120.65 72.39 90)
 			(effects
 				(font
@@ -14596,6 +14820,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "GRM1555C1H102GA1J"
+			(at 41.91 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4c4efe66-29a0-4a2a-8259-5444b88d580e")
 		)
@@ -14606,76 +14838,6 @@
 			(project "OSS-Radio_2M70CM"
 				(path "/07417920-d864-4fe6-bbe4-9feb9e01fbee"
 					(reference "C58")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 58.42 132.08 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6858021a-d3d4-4fc0-9499-cd8308be808a")
-		(property "Reference" "C18"
-			(at 59.944 133.096 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47uF"
-			(at 58.674 130.556 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 58.42 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 58.42 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 58.42 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a8775387-63e1-456b-a3a4-5196914a534a")
-		)
-		(pin "2"
-			(uuid "6f72ac96-08f9-4eff-b3a9-bf337829d1b7")
-		)
-		(instances
-			(project "OSS-Radio_2M70CM"
-				(path "/07417920-d864-4fe6-bbe4-9feb9e01fbee"
-					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -14718,7 +14880,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6129/mmcx-j-p-x-ra-th1-mkt.pdf"
 			(at 254 26.67 0)
 			(effects
 				(font
@@ -15073,6 +15235,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "GRM155R71E473KA8J"
+			(at 97.79 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4e7dbe4a-bf88-4c18-9091-583be35a4a56")
 		)
@@ -15206,6 +15376,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "GRM155R71E473KA8J"
+			(at 20.32 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -15499,6 +15677,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "RC0402JR-070RL"
+			(at 173.99 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "669fc311-a615-41d9-b4ae-d749eb6276d7")
 		)
@@ -15631,6 +15817,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "GRM152R61A104KE19D"
+			(at 167.64 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -15766,6 +15960,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "GRM152R61A104KE19D"
+			(at 80.01 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "90c7a6fa-9cac-4035-bc91-9bb575894524")
 		)
@@ -15831,6 +16033,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "GRM155R71E473KA8J"
+			(at 92.71 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -16048,76 +16258,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 124.46 161.29 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7a89f7dc-c18c-4f5c-98cf-fe4da24ff5f5")
-		(property "Reference" "C13"
-			(at 125.984 162.306 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47uF"
-			(at 124.714 159.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 124.46 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 124.46 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 124.46 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "15b93a6b-091c-4b9c-9137-b252ca7d9970")
-		)
-		(pin "2"
-			(uuid "51703c60-bfae-4aec-8e32-25a5f25cc787")
-		)
-		(instances
-			(project "OSS-Radio_2M70CM"
-				(path "/07417920-d864-4fe6-bbe4-9feb9e01fbee"
-					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 163.83 26.67 0)
 		(mirror x)
@@ -16234,6 +16374,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "RC0402FR-136K8L"
+			(at 147.32 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -16513,6 +16661,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "GRM155R71E473KA8J"
+			(at 97.79 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f5c743b9-7442-43ad-baca-8d5fff0066ec")
 		)
@@ -16781,7 +16937,7 @@
 				(hide yes)
 			)
 		)
-		(property "PART-NUMBER" "LQW15AN5N6G8ZD"
+		(property "PART-NUMBER" "LQW15AN5N6C10D"
 			(at 172.72 106.68 0)
 			(effects
 				(font
@@ -16969,7 +17125,7 @@
 				)
 			)
 		)
-		(property "Value" "5k1"
+		(property "Value" "6k8"
 			(at 43.942 23.876 90)
 			(effects
 				(font
@@ -16996,6 +17152,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 41.91 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "RC0402FR-136K8L"
 			(at 41.91 24.13 0)
 			(effects
 				(font
@@ -17070,6 +17235,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "GRM1555C1H102GA1J"
+			(at 160.02 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -17235,7 +17408,7 @@
 				)
 			)
 		)
-		(property "Value" "5k1"
+		(property "Value" "6k8"
 			(at 43.942 18.796 90)
 			(effects
 				(font
@@ -17262,6 +17435,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 41.91 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "RC0402FR-136K8L"
 			(at 41.91 19.05 0)
 			(effects
 				(font
@@ -17330,6 +17512,14 @@
 		)
 		(property "Description" "GRM0222C1C180GA02"
 			(at 140.208 69.596 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PART-NUMBER" "GJM1555C1H180GB01"
+			(at 137.16 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17488,6 +17678,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "GRM155R71E473KA8J"
+			(at 97.79 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c0e8ffc0-10cc-47b5-b67d-cd05b0b6494a")
 		)
@@ -17625,7 +17823,7 @@
 				(hide yes)
 			)
 		)
-		(property "PART-NUMBER" "LQG15WZ33NG02D"
+		(property "PART-NUMBER" "LQW15AN33NG80D"
 			(at 113.03 88.9 0)
 			(effects
 				(font
@@ -17971,6 +18169,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "RC0402FR-0727KP"
+			(at 161.29 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ccf769c2-beb9-4139-b4ff-ce7f725a1efd")
 		)
@@ -18056,7 +18262,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 53.34 135.89 0)
+		(at 53.34 137.16 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18066,7 +18272,7 @@
 		(fields_autoplaced yes)
 		(uuid "a65d79db-7a15-4d9a-bb33-b7a67bff0ea0")
 		(property "Reference" "#PWR017"
-			(at 53.34 142.24 0)
+			(at 53.34 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18075,7 +18281,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 53.34 140.97 0)
+			(at 53.34 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18083,7 +18289,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 135.89 0)
+			(at 53.34 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18092,7 +18298,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 135.89 0)
+			(at 53.34 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18101,7 +18307,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 53.34 135.89 0)
+			(at 53.34 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18240,6 +18446,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "GRM1555C1H102GA1J"
+			(at 109.22 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3b3c9a55-77ce-42e7-8968-6f4cb7421bfe")
 		)
@@ -18305,6 +18519,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "GRM15R61J224KE01D"
+			(at 92.71 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -18575,7 +18797,7 @@
 				(hide yes)
 			)
 		)
-		(property "PART-NUMBER" "LQG15WH20NG02D"
+		(property "PART-NUMBER" "LQW15AN20NG80D"
 			(at 256.54 81.28 0)
 			(effects
 				(font
@@ -18648,6 +18870,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "RC0402FR-136K8L"
+			(at 181.61 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -18933,6 +19163,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "GRM155R71E473KA8J"
+			(at 97.79 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3da1bf6a-3f5a-44e8-af6b-9fede652827f")
 		)
@@ -18976,7 +19214,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 132.08 161.29 0)
 			(effects
 				(font
@@ -18995,6 +19233,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 132.08 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "GRJ32ER71A476KE11L"
 			(at 132.08 161.29 0)
 			(effects
 				(font
@@ -19070,6 +19317,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "GRM152R61A104KE19D"
+			(at 77.47 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "debbb9eb-7f9c-4140-87c0-d12670803936")
 		)
@@ -19140,7 +19395,7 @@
 				(hide yes)
 			)
 		)
-		(property "PART-NUMBER" "LQG15HN39NG02D"
+		(property "PART-NUMBER" "LQW15AN39NG80D"
 			(at 246.38 66.04 0)
 			(effects
 				(font
@@ -19213,6 +19468,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "GRM155C81A105KA2J"
+			(at 127 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -19415,6 +19678,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "GJM1555C1H390GB01"
+			(at 251.46 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3cce536c-6110-4ef2-9d67-b481ca64551e")
 		)
@@ -19482,6 +19753,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "RC0402FR-1356KL"
+			(at 45.72 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2d31ef51-b9b0-41bd-a13e-e09808968999")
 		)
@@ -19547,6 +19826,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "RC0402FR-073K3L"
+			(at 180.34 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -19681,6 +19968,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "GJM1555C1H100GB01"
+			(at 219.71 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -19947,6 +20242,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "GRM155R71E473KA8J"
+			(at 97.79 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "82c36305-b460-42b9-99a7-95d0a7b1bc7b")
 		)
@@ -20008,7 +20311,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "LQG15WZ51NG02D"
+		(property "Description" "Inductor, small symbol"
 			(at 123.19 81.28 0)
 			(effects
 				(font
@@ -20155,6 +20458,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "GJM1555C1H240GB01"
+			(at 261.62 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -20345,6 +20656,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "RC0402JR-070RL"
+			(at 156.21 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -20548,6 +20867,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "RC0402FR-0727KP"
+			(at 134.62 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d7e9f371-c875-4642-ac3e-3f824c2dcf33")
 		)
@@ -20680,6 +21007,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "RC0402FR-0727KP"
+			(at 166.37 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "bac64207-03ad-4ec7-9e1b-23fce1161fd5")
 		)
@@ -20788,7 +21123,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 87.63 91.44 0)
 			(effects
 				(font
@@ -20813,6 +21148,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "RT1206FRD0751RL"
+			(at 87.63 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -20947,6 +21290,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "RC0402FR-0727KP"
+			(at 156.21 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -21316,6 +21667,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "GRM155C81A105KA2J"
+			(at 234.95 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9de12bdd-1eac-4cbf-a9e4-81de498a65bf")
 		)
@@ -21534,7 +21893,7 @@
 				(hide yes)
 			)
 		)
-		(property "PART-NUMBER" "LQW15AN22NG0ZD"
+		(property "PART-NUMBER" "LQW15AN22NG80D"
 			(at 266.7 81.28 0)
 			(effects
 				(font
@@ -21552,6 +21911,84 @@
 			(project "OSS-Radio_2M70CM"
 				(path "/07417920-d864-4fe6-bbe4-9feb9e01fbee"
 					(reference "L16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 139.7 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f284ed7f-5c06-41e6-8b82-370c4803efda")
+		(property "Reference" "C19"
+			(at 139.954 159.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 140.208 163.322 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 139.7 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 139.7 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "GMC10X7R475K10NT"
+			(at 139.7 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "155e1f63-90b7-45fd-8172-20f96cda34e0")
+		)
+		(pin "2"
+			(uuid "d172eeae-583b-4801-b542-a9b05076cb8a")
+		)
+		(instances
+			(project "OSS-Radio_2M70CM"
+				(path "/07417920-d864-4fe6-bbe4-9feb9e01fbee"
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -21607,6 +22044,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "RC0402JR-070RL"
+			(at 46.99 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -21676,6 +22121,14 @@
 				(hide yes)
 			)
 		)
+		(property "PART-NUMBER" "GRM155R71E473KA8J"
+			(at 97.79 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d222d5eb-69c9-4508-89e2-7865649f9442")
 		)
@@ -21741,6 +22194,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "GRM152R61A104KE19D"
+			(at 229.87 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -21827,7 +22288,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 48.26 132.08 180)
+		(at 53.34 133.35 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21835,7 +22296,7 @@
 		(dnp no)
 		(uuid "f9c4634f-6dbc-43d9-9c2d-28c414792cfb")
 		(property "Reference" "C23"
-			(at 49.53 130.556 0)
+			(at 54.61 131.826 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21844,7 +22305,7 @@
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 49.022 133.604 0)
+			(at 54.102 134.874 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21853,7 +22314,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 48.26 132.08 0)
+			(at 53.34 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21862,7 +22323,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 48.26 132.08 0)
+			(at 53.34 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21871,12 +22332,20 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 48.26 132.08 0)
+			(at 53.34 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "GMC10X7R475K10NT"
+			(at 53.34 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -22013,6 +22482,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART-NUMBER" "GRM155R71E473KA8J"
+			(at 167.64 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
