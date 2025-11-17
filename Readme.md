@@ -11,7 +11,9 @@ Ability for community to write and easily install “apps” that allow custom f
 Usable “off the shelf”. We will be selling the radio as a complete unit (not just a devboard)
 Target price between $200 and $300, Selling all individual parts on our website for repairability
 
-At it's current state, the hardware is untested. That will change soon. We have prototypes on the way
+Our Website: arkosengineering.com
+Our Youtube: youtube.com/@ArkosEngineering
+Help fund development: buymeacoffee.com/arkosengineering
 
 ## [Notes](notes.md)
 
