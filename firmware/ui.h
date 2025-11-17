@@ -4,7 +4,7 @@
 #define OSR_UI
 
 #if !defined(OSR_UI_EXPORT)
-#define OSR_UI_EXPORT static
+#define OSR_UI_EXPORT
 #endif
 
 typedef enum PACKED{
