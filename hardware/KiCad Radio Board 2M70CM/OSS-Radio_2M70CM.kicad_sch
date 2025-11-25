@@ -15439,7 +15439,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/9774020243R.pdf"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/9774015943R.pdf"
 			(at 255.27 144.78 0)
 			(effects
 				(font
@@ -15477,7 +15477,7 @@
 				(hide yes)
 			)
 		)
-		(property "PIN-LENGTH" "2mm"
+		(property "PIN-LENGTH" "1.5mm"
 			(at 255.27 144.78 0)
 			(effects
 				(font
@@ -15517,7 +15517,7 @@
 				(hide yes)
 			)
 		)
-		(property "PART-NUMBER" "9774020243R"
+		(property "PART-NUMBER" "9774015943R"
 			(at 255.27 144.78 0)
 			(effects
 				(font
@@ -16998,7 +16998,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/9774020243R.pdf"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/9774015943R.pdf"
 			(at 226.06 144.78 0)
 			(effects
 				(font
@@ -17036,7 +17036,7 @@
 				(hide yes)
 			)
 		)
-		(property "PIN-LENGTH" "2mm"
+		(property "PIN-LENGTH" "1.5mm"
 			(at 226.06 144.78 0)
 			(effects
 				(font
@@ -17076,7 +17076,7 @@
 				(hide yes)
 			)
 		)
-		(property "PART-NUMBER" "9774020243R"
+		(property "PART-NUMBER" "9774015943R"
 			(at 226.06 144.78 0)
 			(effects
 				(font
@@ -17884,7 +17884,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/9774020243R.pdf"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/9774015943R.pdf"
 			(at 196.85 144.78 0)
 			(effects
 				(font
@@ -17922,7 +17922,7 @@
 				(hide yes)
 			)
 		)
-		(property "PIN-LENGTH" "2mm"
+		(property "PIN-LENGTH" "1.5mm"
 			(at 196.85 144.78 0)
 			(effects
 				(font
@@ -17962,7 +17962,7 @@
 				(hide yes)
 			)
 		)
-		(property "PART-NUMBER" "9774020243R"
+		(property "PART-NUMBER" "9774015943R"
 			(at 196.85 144.78 0)
 			(effects
 				(font

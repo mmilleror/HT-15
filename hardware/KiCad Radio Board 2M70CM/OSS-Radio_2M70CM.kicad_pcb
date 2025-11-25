@@ -8564,7 +8564,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/9774020243R.pdf"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/9774015943R.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8614,7 +8614,7 @@
 				)
 			)
 		)
-		(property "PIN-LENGTH" "2mm"
+		(property "PIN-LENGTH" "1.5mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8666,7 +8666,7 @@
 				)
 			)
 		)
-		(property "PART-NUMBER" "9774020243R"
+		(property "PART-NUMBER" "9774015943R"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9109,7 +9109,7 @@
 			(uuid "fedccefb-36fa-4ef5-9b64-93110f699a1a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSI-M2_H2.5mm_9774025243.wrl"
+		(model "${KICAD9_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSI-M2_H1.5mm_9774015243.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11525,7 +11525,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/9774020243R.pdf"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/9774015943R.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11575,7 +11575,7 @@
 				)
 			)
 		)
-		(property "PIN-LENGTH" "2mm"
+		(property "PIN-LENGTH" "1.5mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11627,7 +11627,7 @@
 				)
 			)
 		)
-		(property "PART-NUMBER" "9774020243R"
+		(property "PART-NUMBER" "9774015943R"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12070,7 +12070,7 @@
 			(uuid "df1bead5-65d8-4e3a-b9e5-8c86e60e1879")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSI-M2_H2.5mm_9774025243.wrl"
+		(model "${KICAD9_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSI-M2_H1.5mm_9774015243.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12856,7 +12856,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/9774020243R.pdf"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/9774015943R.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12906,7 +12906,7 @@
 				)
 			)
 		)
-		(property "PIN-LENGTH" "2mm"
+		(property "PIN-LENGTH" "1.5mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12958,7 +12958,7 @@
 				)
 			)
 		)
-		(property "PART-NUMBER" "9774020243R"
+		(property "PART-NUMBER" "9774015943R"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13401,7 +13401,7 @@
 			(uuid "f87742e8-cb1b-4c5f-8b68-493cc1c6bd19")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSI-M2_H2.5mm_9774025243.wrl"
+		(model "${KICAD9_3DMODEL_DIR}/Mounting_Wuerth.3dshapes/Mounting_Wuerth_WA-SMSI-M2_H1.5mm_9774015243.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -16516,15 +16516,15 @@
 			(uuid "a5fd51af-1dde-47c6-b9a7-87054b3acd7d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Coaxial.3dshapes/MMCX_Molex_73415-1471_Vertical.wrl"
+		(model "${KIPRJMOD}/Library/MMCX-J-P-H-RA-TH1/MMCX-J-P-H-RA-TH1.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 1.75)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 90 90)
 			)
 		)
 	)
@@ -18427,7 +18427,7 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/Library/DF40C-24DP-0.4V(51)/DF40C-24DP.stp"
 			(offset
-				(xyz -3.16 0.85 0.5)
+				(xyz -3.16 0.85 0.6)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -31396,6 +31396,42 @@
 		)
 	)
 	(zone
+		(net 1)
+		(net_name "Net-(AE2-A)")
+		(layer "F.Cu")
+		(uuid "1d3a16f1-2883-496b-994e-883f05544111")
+		(name "$teardrop_padvia$")
+		(hatch full 0.1)
+		(priority 30000)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 138.147961 87.92) (xy 138.147961 87.58) (xy 137.04083 87.141913) (xy 136.918874 87.75) (xy 137.04083 88.358087)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 138.147961 87.92) (xy 138.147961 87.58) (xy 137.04083 87.141913) (xy 136.918874 87.75) (xy 137.04083 88.358087)
+			)
+		)
+	)
+	(zone
 		(net 7)
 		(net_name "Net-(C41-Pad1)")
 		(layer "F.Cu")
@@ -31870,10 +31906,10 @@
 		)
 	)
 	(zone
-		(net 1)
-		(net_name "Net-(AE2-A)")
+		(net 35)
+		(net_name "Net-(U5-LNA_P)")
 		(layer "F.Cu")
-		(uuid "ab5f236b-03e4-4805-b88a-615ee932d49f")
+		(uuid "af7a93a6-8ce8-4e36-85c4-f66a39e9e26b")
 		(name "$teardrop_padvia$")
 		(hatch full 0.1)
 		(priority 30000)
@@ -31895,17 +31931,13 @@
 		)
 		(polygon
 			(pts
-				(xy 138.147961 87.92) (xy 138.147961 87.58) (xy 137.04083 87.141913) (xy 136.918874 87.75) (xy 137.04083 88.358087)
+				(xy 154.65 97.5) (xy 154.85 97.5) (xy 154.875 97.3125) (xy 154.75 96.9365) (xy 154.625 97.3125)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 137.053851 87.147065) (xy 138.140567 87.577074) (xy 138.146998 87.583303) (xy 138.147961 87.587952)
-				(xy 138.147961 87.912047) (xy 138.144534 87.92032) (xy 138.140566 87.922926) (xy 137.053853 88.352933)
-				(xy 137.044899 88.352791) (xy 137.038669 88.346359) (xy 137.038076 88.344355) (xy 136.953033 87.92032)
-				(xy 136.919335 87.752298) (xy 136.919335 87.747699) (xy 136.951374 87.587952) (xy 137.038076 87.155643)
-				(xy 137.043063 87.148207) (xy 137.051849 87.146473)
+				(xy 154.65 97.5) (xy 154.85 97.5) (xy 154.875 97.3125) (xy 154.75 96.9365) (xy 154.625 97.3125)
 			)
 		)
 	)
@@ -31946,45 +31978,6 @@
 				(xy 154.895225 100.90004) (xy 154.421921 100.804929) (xy 154.414485 100.799939) (xy 154.412755 100.791153)
 				(xy 154.412944 100.790361) (xy 154.64763 99.939922) (xy 154.653134 99.932859) (xy 154.658908 99.931335)
 				(xy 154.843777 99.931335)
-			)
-		)
-	)
-	(zone
-		(net 35)
-		(net_name "Net-(U5-LNA_P)")
-		(layer "F.Cu")
-		(uuid "eaa43cab-b8d8-4018-9d13-6f020c80effa")
-		(name "$teardrop_padvia$")
-		(hatch full 0.1)
-		(priority 30009)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
-		)
-		(polygon
-			(pts
-				(xy 154.65 97.5) (xy 154.85 97.5) (xy 154.875 97.3125) (xy 154.75 96.9365) (xy 154.625 97.3125)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 154.760461 96.968347) (xy 154.761103 96.969897) (xy 154.874149 97.30994) (xy 154.874643 97.315177)
-				(xy 154.851354 97.489846) (xy 154.846864 97.497594) (xy 154.839757 97.5) (xy 154.660243 97.5) (xy 154.65197 97.496573)
-				(xy 154.648646 97.489846) (xy 154.625356 97.315172) (xy 154.625849 97.309944) (xy 154.738897 96.969896)
-				(xy 154.744759 96.963127) (xy 154.753691 96.962485)
 			)
 		)
 	)
